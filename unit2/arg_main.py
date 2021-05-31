@@ -9,8 +9,6 @@ my_list = [] ##list
 
 
 if __name__ == "__main__":
-        
-        
         my_int = int(sys.argv[1] )
         my_str = str (sys.argv[2] )
         my_float = float (sys.argv[3])
