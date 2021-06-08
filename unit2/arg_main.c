@@ -2,13 +2,13 @@
 #include <stdlib.h> //aoit, atof//
 #include <string.h>  //strcpy//
 
-int my_int = 0; // %i o %d
+int my_int = 12; // %i o %d
 float my_float = 3.14; // %f //en verdad era 0
 char my_char = 'c'; // %c
 char my_str[10] = "0"; //%s
 
-float second_float = 0.0;
 //Pointer//
+
 int* my_ptr_int = &my_int; // %p
 
 int main( int argc, char** argv){
