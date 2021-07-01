@@ -4,13 +4,22 @@
 
 #define pi 3.1416
 
-typedef struct array;
+//objeto//
+typedef struct utils
 {
-    int* dirArray[2];
-    float aFloat;
-    float* aFloatPointer;
+        int myInt;
+        void (*ShowIntAdress) (int* param);
+        void (*ShowIntValueAdress) (int* param);
+        void (*modifyVariablesAddress) (int* dir1, int* dir2, int multiplo );
+}UTILS;
 
-}Array; 
+typedef struct  array
+{
+        int dirArray[2];
+        float aFloat;
+        float * aFloatPointer;
+}Array;
+
 
 int libInteger = 24;
 
@@ -22,6 +31,7 @@ void sayHello( char message[]){
 
 void sayMyname ( char message[]){
         printf( "%s\n", message);
+        return;
 }
 
 int addTwoNumbers( int argumento1, int argumento2){  
@@ -35,6 +45,7 @@ void modifyVariables( int argumento1, int argumento2){
     argumento2 = argumento2*2;
     return;
 }
+
 // paso de argumentos de dirección//
 // void modifyVariablesAdress(int*ptr1, int*ptr2){
 //         *ptr1 = *ptr1*2;
@@ -75,7 +86,7 @@ void swap( int* ptr1, int* ptr2){
 //         return;
 // }
 
-
+//----------------------------My actividad del swap------------------------//
 void ShowIntNewValue(int* param){
         printf("Value: %i\n", *param);
 
@@ -94,17 +105,7 @@ int SwapVariables(int*dir1, int*dir2){
         *dir2 =  tmp;
         return 0;
 }
-
-
- 
-// void swap(int* ptr1, int* ptr2){
-//         int temp = *ptr1;
-//         *ptr1 = *ptr2;
-//         *ptr2 = temp;
-//         return;
-// }
-
-
+//--------------------------------------------------------------------------//
 
 void fillArray(int array[], size_t tam){
         for (size_t i = 0; i < tam; i++)
@@ -122,8 +123,6 @@ for (size_t i = 0; i < tam; i++)
         return;
 }
 
-
-
 Array* returnArray( ){
         // int unArreglo[5] = {1,5,6,7,8};
         Array* unArrayType = (Array*)malloc(sizeof(Array) );
@@ -134,5 +133,6 @@ Array* returnArray( ){
         return unArrayType;
 }
 
+//--------------------------------------------------------------------//
 
 

@@ -35,7 +35,7 @@ int main(){
         printf( "%d\n"  , luis.sumaDosNumeros(20,25)   );
         
         fillArray( myIntArray, 5);
-        printArray1D( myIntArray,  5   );
+        PrintArray1D( myIntArray,  5   );
         printf("%d",  myIntArray[0]   );
         printf("%d",  myIntArray[1]   );
         printf("%d",  myIntArray[2]   );
