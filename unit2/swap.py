@@ -10,6 +10,7 @@ print(f'Initial values: a:{a},b:{b}')
 # -----------------
 # a=b
 # b=a
+hi = "hola"
 
 def swap(param1, param2):
     global a
@@ -17,6 +18,8 @@ def swap(param1, param2):
     temp = a
     a = b
     b = temp
+
+    hi.upper()
 
 if __name__ == "__main__":
     print("Swap program")

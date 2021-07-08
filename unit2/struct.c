@@ -4,22 +4,27 @@
 
 #include "./folderTest/utils.h"
 
-typedef struct utils {
-        int myInt;
-}UTILS;
+// typedef struct utils {
+//         int myInt;
+// }UTILS;
 
-
+int a = 2;
+int b = 4;
 
 int main(int argc, char** argv){
 
-        UTILS myStructC = {1};
+        int otroInt = 9;
+        UTILS myStructC = {1,ShowIntAdress}; //adding the function
         printf("myInt: %d. &myStructC: %p\n", myStructC.myInt, &myStructC );
         UTILS* myStructP = &myStructC;
-
         printf("myInt: %d\n", (*myStructP).myInt );
         printf("myInt: %d\n", myStructP->myInt );
+        myStructC.ShowIntAdress(&otroInt);
 
-
-
+        UTILS obj;
+        obj.myInt = 100;
+        obj.mySwap = swap;
+        obj.mySwap( &a, &b);
+        printf("a:%d, b:%d.\n", a,b);
         return 0;
 }

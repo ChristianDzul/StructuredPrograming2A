@@ -5,12 +5,19 @@
 #define pi 3.1416
 
 //objeto//
+// typedef struct utils
+// {
+//         int myInt;
+//         void (*ShowIntAdress) (int* param);
+//         void (*ShowIntValueAdress) (int* param);
+//         void (*modifyVariablesAddress) (int* dir1, int* dir2, int multiplo );
+// }UTILS;
 typedef struct utils
 {
         int myInt;
         void (*ShowIntAdress) (int* param);
-        void (*ShowIntValueAdress) (int* param);
-        void (*modifyVariablesAddress) (int* dir1, int* dir2, int multiplo );
+        void (*mySwap) (int* ptr1, int* ptr2);
+        
 }UTILS;
 
 typedef struct  array
@@ -59,6 +66,10 @@ void ShowIntAdress(int* param){
 
 void ShowIntValueAdress(  int* param  ){
         printf( "value: %i\n", *param );
+}
+
+void ShowFloatAdress(  int* param  ){
+        printf( "address: %p\n", param );
 }
 
 void modifyVariablesAddress( int* dir1   ,  int* dir2, int multiplo ){
