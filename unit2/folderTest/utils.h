@@ -2,7 +2,9 @@
 #include <stdlib.h> //atoi, atof, sprinf,
 #include <string.h> //strcpy
 
+//se pueden guardar macros o variables (las cuales son globales )
 #define pi 3.1416
+//int libInteger = 24;
 
 //objeto//
 // typedef struct utils
@@ -30,7 +32,7 @@ typedef struct  array
 
 int libInteger = 24;
 
-
+//---FUNCTIONINTRO.C//
 void sayHello( char message[]){
         printf( "%s\n", message);
     
@@ -45,13 +47,10 @@ int addTwoNumbers( int argumento1, int argumento2){
         int result = argumento1 + argumento2;
         return result;
 }
+///----AQUI TERMINA----///
 
 // paso de argumentos por valor//
-void modifyVariables( int argumento1, int argumento2){
-    argumento1 = argumento1*2;
-    argumento2 = argumento2*2;
-    return;
-}
+ 
 
 // paso de argumentos de dirección//
 // void modifyVariablesAdress(int*ptr1, int*ptr2){

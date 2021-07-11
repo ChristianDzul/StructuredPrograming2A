@@ -4,32 +4,30 @@
 
 int myNumber = 3;
 float myfloat = 3.1416;
-char myString[255] = "Hola mundo"; //caracteres que tendra el mundo
+char myString[255] = "Hola mundo"; //caracteres que tendra el texto, cadena de caracteres como maximo
 
+//PRIMER METODO: DECLARAR Y DEFINIR UNA FUNCION (dos en uno)-----------------------
+// void sayHello ( char message[]  ){ //poner el type del argumento, en este caso es un char string el parametro-etiqueta "message"
+//     printf("%s", message);  
+// }    //esta funcion lleva void ya que no retorna o arroja un dato u operación, solo lo hace pero no arroja nada (tal como un numero)
+//_--------------------------------------------------------------
 
-// Primer metodo para funciones
-//Declare and define the function or variable
-// void sayHello( char message[]){
-//         printf( "%s\n", message);
-    
-// }
-
-    //segundo metodo para funciones
-    // 1- declaro
+//----SEGUNDO METODO PARA FUNCIONES: 1-Declaro
 void sayMyname ( char message[]);
 
 int addTwoNumbers( int argumento1 , int argumento2 ); //declarando Conocido tambien como el prototipo de la función;
+//------------------------------------//
 
-int main( ){
+int main( ){  ///dentro de esto va el llamado de las funciones. Las funciones pueden ir abajo o arriba. RECORDAR QUE CUANDO MAIN SE EJECUTA HACE EL BARRIDO (ARRIBA-ABAJO) PARA BUSCAR LAS FUNCIONES LLAMADAS DENTRO DE MAIN    
 
-        sayHello("Hola mundo");
+        sayHello("Hello World");
         sayMyname("Luis");
         int myResult = addTwoNumbers ( 2, 5);
-        printf ("myResult is equal to: %d \n", myResult);
+        printf ("myResult is equal to: %d \n", myResult); 
         return 0;  
-}
+} 
 
-// 2-definimos
+// -------2-definimos-----------------------------------//
 // void sayMyname ( char message[]){
 //         printf( "%s\n", message);
 // }
@@ -39,3 +37,5 @@ int main( ){
 //         return result;
 
 // }
+
+//----------------------------------------------------//

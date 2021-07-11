@@ -1,13 +1,13 @@
-#include <istream>
+#include <iostream>
 
-std::string myString = "Hola mundo";
-int myNumber = 3;
+std::string myString = "Hola mundo"; // string esta contenida en la biblioteca std
+int myNumber = 3; //no hereda de std
 float myFloat = 3.1416;
 
-// Declarando
+// Declarando funcion
 void sayHello(std::string tag1 );
 
-
+//donde se llamara la funcion y arroja el resultado del proceso
 int main(){
 
         sayHello(myString);
@@ -15,8 +15,8 @@ int main(){
         return EXIT_SUCCESS;
 }
 
-// Define
+// Definiendo funcion (el proceso que hara)
 void sayHello( std::string tag1 ){
-    std::cout<<tag1<<std::end1;
+    std::cout<<tag1<<std::endl; ///<<std::end1 es el salto de linea
 
 }
