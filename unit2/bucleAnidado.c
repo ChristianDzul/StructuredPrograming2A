@@ -11,9 +11,9 @@ typedef int INTEGER;
 
 int main( int argc, char** argv ){
         int index2 = 0;
-        for (int index = 0; index < TAN; index++, index2++){
+        for (int index = 0; index < TAN; index++, index2++){   ///for principal
             printf( "index: %d, value: %d.\n\a", index, list[index]);
-            for (size_t i = 0; i < 3; i++){
+            for (size_t i = 0; i < 3; i++){ //bucle anidado o for anidado
                 printf("HolaMundo!!!\n");
             }
         }
