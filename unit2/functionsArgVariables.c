@@ -24,8 +24,9 @@ int main ( int argc, char** argv){
         int * myptr1 =  &var1;
         int * myptr2 = &var2;
 
-        ShowIntAdress( myptr1 );
-        ShowIntAdress(myptr2);
+        printf("adress var1:%p,\t adress var2:%p\n", myptr1, myptr2); ///esto solo nos muestra la adress de la variable
+        // ShowIntAdress( myptr1 ); ///esto solo nos muestra la adress de la variable
+        //  ShowIntAdress(myptr2);
         
 
         printf("Pointer has modificaded the var1:\n");
@@ -49,10 +50,10 @@ int main ( int argc, char** argv){
                 // *0x7ff150a01018 = 1000;
 
         swap( &var1, &var2);
-        swapGobal();
+        // swapGobal();
         printf("myVar1=  %d, myVar2= %d\n",  myVar1, myVar2 );
 
 
         return 0;
 }
-}
+

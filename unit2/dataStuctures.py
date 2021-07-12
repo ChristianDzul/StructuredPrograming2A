@@ -60,11 +60,17 @@ if __name__ =="__main__":
 
     print(usersAdmin) ##aqui nos muestra el resultado
 
-
+         
 
 
     sensor = "$GPGGA,134658.00,5106.9792,N,11402.3003,W,2,09,1.0,1048.47,M,16.27,M,08,AAAA*60"
         
+        ###Slicing
+    strVariable = "ThisIsAnApple"
+    newString  =  strVariable[::-1]
+    print(   f'strVariable[{1}]: {strVariable[1]}' )
+    print(   f'newString: {newString}' )
+        ##OTRA COSA##
     listaSensor =   sensor.split(   ","  )
     hr = listaSensor[1][:2]
     min =  listaSensor[1][2:4]

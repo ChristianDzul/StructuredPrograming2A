@@ -16,7 +16,7 @@ void SwapVar(int*SwVar1, int*SwVar2){
     int temporal = *SwVar1;
     *SwVar1 = *SwVar2;
     *SwVar2 = temporal;
-}
+} 
 
 
 int main ( int argc, char** argv){

@@ -47,6 +47,12 @@ int addTwoNumbers( int argumento1, int argumento2){
         int result = argumento1 + argumento2;
         return result;
 }
+
+void modifyVariables( int argumento1, int argumento2){
+        argumento1 = argumento1*2;
+        argumento2 = argumento2*2;
+        return;
+}
 ///----AQUI TERMINA----///
 
 // paso de argumentos por valor//
