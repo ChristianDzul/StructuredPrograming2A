@@ -17,8 +17,8 @@ if __name__ == "__main__":
     print("Longitud:", lista[4], "Longitud_dir:",lista[5])
     print("Quality indicator:", lista[6])
 
-    # gps = {"HeaderConfig:",lista[0], "UTC:", lista[1],"Latitud:", lista[2]+lista[3],"Longitud:", lista[4]+lista[5]}
-
+    gps = {"HeaderConfig":lista[0], "UTC":lista[1],"Latitud": f'{lista[2]} {lista[3]}' ,"Longitud": f'{lista[4]} {lista[5]}' }
+    print(gps['Latitud'])
     # sensorFixed  = ",".join(gps)
     # print(sensorFixed)
 

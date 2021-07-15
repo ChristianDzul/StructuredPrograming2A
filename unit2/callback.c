@@ -10,7 +10,7 @@ void callToNumber(int number){
 }
 //Declarando
 void SecurityCamera( void (*cb) (int number),  int  EmergencyNumber );
-void SecurityCamera2();
+void SecurityCamera2(); //funcion esperando a que algo pase
 
 int main(){
         
@@ -24,6 +24,7 @@ int main(){
 void SecurityCamera( void (*cb) (int number), int EmergencyNumber   ){
         //Logica Compleja//
         bool thief = false;
+        //puts ("CACA"); //similar a la funcion PRINTF
         if(thief){ //Si detecta ladron debe hacer algo!
                 // Ejecutar un calback
                 callToNumber(EmergencyNumber);

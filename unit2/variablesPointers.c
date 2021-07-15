@@ -22,7 +22,7 @@ int main(){
 
         // Array myArray;
         Array* myArray =    returnArray();
-        printf(  "%d\n", myArray->dirArray[1]  );
+        printf(  "%d\n", myArray->dirArray[1]  ); // -> sirve para acceder a un alojamiento creado por malloc que engloba a la estructurra de tipo array, esto te permite acceder a cosas muy internas, como si de ficheros se tratase
         
         // malloc(), realloc, calloc();
         

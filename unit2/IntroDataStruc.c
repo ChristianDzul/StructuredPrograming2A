@@ -11,7 +11,7 @@ int myInt = 4;
 float myFloat = 3.1416;
 
 
-typedef struct mago{
+typedef struct mago{ //el typedef sirve para poder hacer que el nombre de la estructura tenga un alias que nosotros queramos
 
         int vida;
         int mana;
@@ -20,7 +20,7 @@ typedef struct mago{
         //sayHello
         void (*Saludo) (char message[]);
         int (*sumaDosNumeros) (int  argumento1, int argumento2 );
-}Mago;
+}Mago; //esto es un tag que tu asignas a la estructura
 
 // typedef struct mago Mago;
 
@@ -30,7 +30,7 @@ int main(){
         struct mago miguel = {200, 200, "Miguel"};
         
         
-        printf( "%s\n", luis.nombre  );
+        printf( "%s\n", luis.nombre  ); //en pointer, el "." se usa cuando quieres acceder a algo dentro de una estructura array
         luis.Saludo( "Hola soy un mago!");
         printf( "%d\n"  , luis.sumaDosNumeros(20,25)   );
         

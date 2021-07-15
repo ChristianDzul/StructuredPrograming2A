@@ -7,20 +7,20 @@
 //int libInteger = 24;
 
 //objeto//
-// typedef struct utils
-// {
-//         int myInt;
-//         void (*ShowIntAdress) (int* param);
-//         void (*ShowIntValueAdress) (int* param);
-//         void (*modifyVariablesAddress) (int* dir1, int* dir2, int multiplo );
-// }UTILS;
 typedef struct utils
 {
         int myInt;
         void (*ShowIntAdress) (int* param);
-        void (*mySwap) (int* ptr1, int* ptr2);
-        
+        void (*ShowIntValueAdress) (int* param);
+        void (*modifyVariablesAddress) (int* dir1, int* dir2, int multiplo );
 }UTILS;
+// typedef struct utils
+// {
+//         int myInt;
+//         void (*ShowIntAdress) (int* param);
+//         void (*mySwap) (int* ptr1, int* ptr2);
+        
+// }UTILS;
 
 typedef struct  array
 {
@@ -141,7 +141,7 @@ for (size_t i = 0; i < tam; i++)
 
 Array* returnArray( ){
         // int unArreglo[5] = {1,5,6,7,8};
-        Array* unArrayType = (Array*)malloc(sizeof(Array) );
+        Array* unArrayType = (Array*)malloc(sizeof(Array) ); //esta funcion de malloc te permirte crear otra estructura que englobe a la estructura de tipo array, por ello se usa el "*" para llamar la direccion y pasarla a una nuesva estruc que sera ampliada por la funcion malloc
         printf("addres unArrayType: %p, unArrayType = %p \n",  &unArrayType, unArrayType );
 
         unArrayType->dirArray[0] = 17;
