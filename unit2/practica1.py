@@ -21,7 +21,7 @@ def  alternatingSums(par1):
 
 ##SECOND WAY USING LIST COMP##
 def alternatingSums2(input):
-    return [sum([input[iterador] for iterador in range (0, len(input)) if iterador%2!=0]), sum([input[iterador] for iterador in range (0, len(input)) if iterador%2 ==0])]
+    return [sum([input[iterador] for iterador in range (0, len(input)) if iterador%2==0]), sum([input[iterador] for iterador in range (0, len(input)) if iterador%2 !=0])]
     
 if __name__ == "__main__":
     a = [50,60,60,45,70]
