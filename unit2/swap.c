@@ -12,7 +12,7 @@ int main( ){
     printf("Swapping numbers...\n");
     SwapVariables (&a, &b);
     printf ("Swapped values:\n");
-     printf ("Num1=%d , Num2: %d\n", a, b);
+    printf ("Num1=%d , Num2: %d\n", a, b);
     return 0;
 }
 
